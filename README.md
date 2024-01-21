@@ -6,4 +6,4 @@ This project is a private React application with TypeScript support and Vite as 
 
 # website
 
-To see a working example, visit [https://301-A.vercel.app/].
+To see a working example, visit [https://301-a.vercel.app/].
