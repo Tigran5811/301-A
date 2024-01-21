@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 58px;
+  background: url("../../assets/icon/Group5898.svg") top right no-repeat;
+  background-size: auto;
+  background-color: #fff;
+
+  & .wrapper-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  & .title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 62px;
+    gap: 20px;
+    margin-left: -60px;
+    margin-bottom: 108px;
+
+    & h2 {
+      color: #151c26;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: start;
+    }
+  }
+  & .input-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 125px;
+    & .up-container {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+
+      & input {
+        border-radius: 46px;
+        border: 2px solid rgba(0, 0, 0, 0.14);
+        box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+        color: #303030;
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px; /* 155% */
+        padding: 10px 100px 10px 20px;
+      }
+    }
+
+    & .down-container {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      align-items: end;
+
+      & input {
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.14);
+        box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+        color: #303030;
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px; /* 155% */
+        padding: 10px 100px 85px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 25px;
+
+    & .title {
+      margin-left: 0;
+      margin-bottom: 20px;
+      & img {
+        width: 22px;
+      }
+    }
+    & .input-container {
+      width: 100%;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 40px;
+      & .up-container {
+        align-items: center;
+        width: 100%;
+
+        gap: 10px;
+        & input {
+          font-size: 14px;
+          padding: 10px 50px 10px 20px;
+        }
+        & h3 {
+          margin-bottom: 5px;
+        }
+      }
+      & .down-container {
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        & input {
+          font-size: 14px;
+          padding: 10px 50px 50px 20px;
+        }
+        & h3 {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

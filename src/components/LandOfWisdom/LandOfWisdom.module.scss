@@ -1,0 +1,151 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 108px);
+  background-color: #fff;
+
+  & .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 200px auto;
+    position: relative;
+
+    & .images-container {
+      display: flex;
+
+      & .Follow-container {
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-size: 20px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: start;
+
+        & a {
+          font-size: 20px;
+          font-weight: 500;
+          color: #151c26;
+
+          & img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        & p {
+          writing-mode: vertical-rl;
+        }
+
+        & span {
+          display: flex;
+          height: 50px;
+          border: 1px solid #000;
+        }
+      }
+    }
+
+    & .text-container {
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  }
+
+  & h1 {
+    color: #151c26;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  & p {
+    color: #151c26;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+  }
+  & .image-naxshuxix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+    opacity: 0.9;
+  }
+  & .image-naxshuxix1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+  & .naxsh-container {
+    width: 100%;
+    height: 100%;
+
+    & .image-palace {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.6;
+    }
+    & .image-naxsh {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      padding: 0 25px;
+      height: 100%;
+      & .images-container {
+        display: flex;
+
+        & img {
+          max-width: 100%;
+          height: 120px;
+        }
+      }
+      & .box {
+        flex-direction: column-reverse;
+        margin: 100px auto;
+        max-width: 100%;
+        gap: 70px;
+      }
+
+      & .buttons-container {
+        & button {
+          width: 100%;
+        }
+      }
+      & .naxsh-container {
+        & .image-naxsh {
+          height: 270px;
+          transform: translate(-50%, -125%);
+        }
+      }
+    }
+  }
+}
+
+[data-index="9"] {
+  z-index: 99;
+}
